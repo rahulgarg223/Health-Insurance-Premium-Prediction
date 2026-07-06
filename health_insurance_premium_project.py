@@ -129,8 +129,34 @@ print("Best Cross Validation R²:", grid_search.best_score_)
 
 """Making Prediction using Model"""
 
-data = pd.DataFrame(data={"Predicted Premium Amount": ypred})
-print(data.head())
+results = pd.DataFrame({
+    "Actual Charges": ytest,
+    "Predicted Charges": ypred
+})
+
+results["Absolute Error"] = (
+    results["Actual Charges"] - results["Predicted Charges"]
+).abs()
+
+results = results.reset_index(drop=True)
+
+print(results.head(10))
+
+"""Plot between Actual Value vs. Predicted Value"""
+
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8, 6))
+plt.scatter(ytest, ypred, alpha=0.7)
+plt.xlabel("Actual Charges")
+plt.ylabel("Predicted Charges")
+plt.title("Actual vs Predicted Insurance Charges")
+plt.plot(
+    [ytest.min(), ytest.max()],
+    [ytest.min(), ytest.max()],
+    'r--'
+)
+plt.show()
 
 """Performance Metrics"""
 
