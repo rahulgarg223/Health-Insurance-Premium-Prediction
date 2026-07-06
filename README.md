@@ -15,7 +15,7 @@ Health Insurance Dataset
 - Plotly
 - Matplotlib
 
-## Correlation Heatmap
+## Piechart showing Smokers by Region
 
 ![Heatmap](images/piechart.png)
 
