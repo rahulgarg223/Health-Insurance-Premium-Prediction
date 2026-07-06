@@ -15,6 +15,22 @@ Health Insurance Dataset
 - Plotly
 - Matplotlib
 
+## Correlation Heatmap
+
+![Heatmap](images/piechart.png)
+
+## Smoker Histogram
+
+![Prediction](images/smoker_histogram.png)
+
+## Actual vs Predicted Charges
+
+![Prediction](images/prediction.png)
+
+## Actual vs Predicted Charges Plot
+
+![Prediction](images/actual_vs_predicted.png)
+
 ## Performance
 
 R² Score : 0.84
