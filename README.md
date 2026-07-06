@@ -34,6 +34,9 @@ MAPE : 33%
 - Smoker
 - Region
 
+## Target Variable
+- Charges
+
 ## Author
 
 Rahul Garg
