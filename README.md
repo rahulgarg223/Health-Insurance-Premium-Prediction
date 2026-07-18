@@ -1,6 +1,6 @@
 # Health Insurance Premium Prediction
 
-This project predicts health insurance premium charges using Machine Learning.
+This project predicts health insurance premium charges using Machine Learning. Using 6 different features to train a model to make predictions on a target variable i.e. Charges.
 
 ## Dataset
 Health Insurance Dataset
